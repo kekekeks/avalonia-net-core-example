@@ -1,0 +1,25 @@
+{
+    "version": "1.0.0-*",
+    "buildOptions": {
+        "emitEntryPoint": true,
+        "embed": [
+            "**/*.xaml", "Assets/*"
+        ]
+    },
+
+    "dependencies": {
+        "Avalonia": "0.4.1-*",
+        "Avalonia.Skia.Desktop": "0.4.1-*",
+        "Avalonia.Win32": "0.4.1-*",
+        "Avalonia.Gtk3": "0.4.1-*"
+    },
+    "runtimes": {
+        "win7-x64": {},
+        "ubuntu.14.04-x64": {}
+    },
+    "frameworks": {
+        "netcoreapp1.0": {
+    
+        }
+    }
+}
