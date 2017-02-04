@@ -3,6 +3,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media.Imaging;
+using Avalonia.Platform;
 
 namespace ControlCatalog.Pages
 {
@@ -25,6 +26,10 @@ namespace ControlCatalog.Pages
             base.OnAttachedToVisualTree(e);
             if (iconImage.Source == null)
             {
+                if (AvaloniaLocator.Current.GetService<IRuntimePlatform>().GetRuntimeInfo().OperatingSystem
+                        == OperatingSystemType.WinNT)
+                    //Not implemented yet
+                    return;
                 var windowRoot = e.Root as Window;
                 if (windowRoot != null)
                 {
