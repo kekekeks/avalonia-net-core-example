@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>ControlCatalog</AssemblyName>
+    <OutputType>exe</OutputType>
+    <PackageId>ControlCatalog</PackageId>
+    <RuntimeIdentifiers>win7-x64;ubuntu.14.04-x64</RuntimeIdentifiers>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <OutputTypeEx>winexe</OutputTypeEx>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="**\*.xaml;Assets\*" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.4.1-*" />
+    <PackageReference Include="Avalonia.Skia.Desktop" Version="0.4.1-*" />
+    <PackageReference Include="Avalonia.Win32" Version="0.4.1-*" />
+    <PackageReference Include="Avalonia.Gtk3" Version="0.4.1-*" />
+  </ItemGroup>
+</Project>
