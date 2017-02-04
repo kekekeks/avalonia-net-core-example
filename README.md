@@ -37,8 +37,12 @@ Place those somewhere, `chmod +x` and then set `LD_LIBRARY_PATH` to that directo
 For other Linux distros you need to build libSkiaSharp yourself or hope that those are compatible.
 
 
-Mac
+Mac OS X
 ---
 
-You need to get GTK3 binaries somewhere. I'm planning to check if it works with ones from `brew`, but haven't done that yet. 
-We are planning to implement Quartz-backend in the future.
+Follow instructions from https://www.microsoft.com/net/core#macos
+Note, that you need at least RC3 - https://go.microsoft.com/fwlink/?linkid=839635
+
+After .NET Core SDK is installed, run `brew install gtk+3` to install GTK3. We are planning to implement Quartz-backend, so this step won't be needed in the future.
+
+Then you should be able to run `dotnet restore` and `dotnet run`.
