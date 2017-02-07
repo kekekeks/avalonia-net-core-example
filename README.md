@@ -29,7 +29,7 @@ Linux
 SkiaSharp package doesn't have a precompiled Linux binary yet, but we have it built for Ubuntu:
 
 https://1drv.ms/u/s!AguhICu8mgtrgvo1gE1BRIQh5PJXEg - libskia.so
-https://files.gitter.im/AvaloniaUI/Avalonia/zsGE/libSkiaSharp.so - libSkiaSharp.so
+https://files.gitter.im/AvaloniaUI/Avalonia/sGde/libSkiaSharp.so - libSkiaSharp.so
 
 Place those somewhere, `chmod +x` and then set `LD_LIBRARY_PATH` to that directory. When running a published version just copy these binaries to output directory.
 
